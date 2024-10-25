@@ -6,6 +6,7 @@ export default function RecipeScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Recipes</Text>
+      
     </View>
   );
 }

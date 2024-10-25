@@ -1,6 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { LinearGradient } from "expo-linear-gradient";
+import { StyleSheet, Text, View  } from 'react-native';
+import { LogoImage } from '../components/image';
 import { theme } from '../theme';
 
 
@@ -9,8 +8,9 @@ import { theme } from '../theme';
 export default function App() {
   return (
     <View style={styles.container}>
+     <LogoImage/>
      <Text style={styles.text}>Foody</Text>
-     <Text style={{fontSize:24,color:theme.colorWhite}}>Food is always right</Text>
+     <Text style={{fontSize:30,color:theme.colorWhite}}>Food is always right</Text>
     </View>
   );
 }
@@ -23,12 +23,13 @@ const styles = StyleSheet.create({
     backgroundColor:theme.colorOrange,
   },
   text:{
-    fontSize:32,
+    fontSize:35,
     fontWeight:"bold",
     textAlign:"center",
     justifyContent:"center",
     alignItems:"center",
     color:theme.colorWhite,
+
   },
   backGround:{
     flex:1,
